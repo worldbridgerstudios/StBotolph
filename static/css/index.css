@@ -1,0 +1,6 @@
+/* CSS specific to index.html goes here */
+.jumbotron {
+  background-image: url("/static/img/jumbotron.jpeg");
+  background-size: cover;
+  color: white;
+}

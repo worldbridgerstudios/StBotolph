@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load custom_tags %}
+
+{% block title %}Home{% endblock %}
+
+{% block css %}
+{{ block.super }}
+<link type="text/css" href="{% static 'css/index.css' %}" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-4">Welcome to Election Night</h1>
+        <p class="lead">Your favourite hotspot for the latest results.</p>
+        <p class="lead">
+            <a class="btn btn-info btn-sm" href="https://gitlab.com/stbotolphs/nick-brown/" role="button">Gitlab project</a>
+        </p>
+    </div>
+</div>
+{% endblock %}
+
+{% block javascript %}
+{{ block.super }}
+<script src="{% static 'js/index.js' %}"></script>
+{% endblock %}
